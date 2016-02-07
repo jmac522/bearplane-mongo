@@ -1,0 +1,296 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+ @import url(https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Poiret+One|Crimson+Text);
+ @import url(https://fonts.googleapis.com/css?family=Lato:700|Droid+Serif);
+ $background: #A1C4C7;
+ $accent: rgb(67, 117, 122);
+ $logo-font: 'Poiret One', cursive;
+ $header-font: 'Lato', sans-serif;
+ $accent-1: #177FA7;
+ $accent-2: #D75B43;
+
+ body {
+   background-color: $background;
+   margin: 0;
+ }
+
+ .form {
+   background-color: #F2F2F2;
+   padding: 13px 14px;
+   margin-top: 20px !important;
+   margin-bottom: 20px !important;
+   border: 1px solid lightgrey;
+ }
+
+ .sub-text {
+   color: grey;
+ }
+
+ .button {
+   background-color: $accent-1;
+   color: white;
+ }
+
+ h1 {
+   font-family: $logo-font;
+   color: $accent-2;
+ }
+
+ table {
+   margin-top: 2%;
+ }
+
+ .nav {
+   div {
+     display: inline-block;
+   }
+ }
+
+
+ .link {
+   font-family: $header-font;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   text-align: center;
+   a {
+     color: black;
+   }
+ }
+ .link {
+   a::after {
+     display:block;
+     content: '';
+     border-bottom: solid 5px $accent;
+     transform: scaleX(0.0001);
+     transition: transform 250ms ease-in-out;
+     position: relative;
+     top:23px;
+   }
+ }
+
+ .link.active {
+   a::after {
+     display:block;
+     content: '';
+     border-bottom: solid 5px $accent;
+     transform: scaleX(1);
+     transition: transform 250ms ease-in-out;
+     position: relative;
+   }
+   a span {
+     color: $accent;
+   }
+ }
+
+ .link {
+   a:hover:after {
+     /*     border-bottom: 5px solid rgb(14, 118, 188); */
+     transform: scaleX(1);
+     position: relative;
+     top: 23px;
+   }
+   a span:hover {
+     color: $accent;
+   }
+ }
+
+ .link a:hover {
+   color: white;
+ }
+
+ .col-centered{
+   float: none;
+   margin: 0 auto;
+ }
+
+ .sound-cloud {
+   margin-top: 10px;
+ }
+
+ .tag-line {
+   text-align: center;
+
+   h2 {
+     font-family: $logo-font;
+     background-color: rgba(52, 52, 52, 0.1);
+     padding: 60px;
+   }
+ }
+
+ .header {
+   text-align: center;
+   img {
+     height: 250px;
+   }
+   h3 {
+     font-family: $logo-font;
+     a {
+       color: black;
+     }
+   }
+ }
+
+ /* Media Page */
+
+ .media-container {
+   padding: 10px;
+   margin-top: 5px;
+ }
+
+ .media-header {
+   text-align: center;
+   a img {
+     border-radius: 5px;
+     margin: 5px 2px;
+   }
+   a img:hover {
+     border: 1px solid $accent-1;
+   }
+ }
+
+ #top-header {
+   margin-top: 10px;
+ }
+
+ .fb-vid {
+   padding-top: 30px;
+ }
+
+ div.pp_default .pp_top .pp_left {
+    background: transparent asset_url("prettyPhoto/default/sprite.png") no-repeat scroll -78px -93px;
+}
+
+div.pp_default .pp_top .pp_middle {
+    background: transparent asset_url("prettyPhoto/default/sprite_x.png") repeat-x scroll left top;
+}
+
+div.pp_default .pp_top .pp_right {
+    background: transparent asset_url("prettyPhoto/default/sprite.png") no-repeat scroll -112px -93px;
+}
+
+div.pp_default .pp_content_container .pp_left {
+    background: transparent asset_url("prettyPhoto/default/sprite_y.png") repeat-y scroll -7px 0px;
+    padding-left: 13px;
+}
+
+div.pp_default .pp_content_container .pp_right {
+    background: transparent asset_url("prettyPhoto/default/sprite_y.png") repeat-y scroll right top;
+    padding-right: 13px;
+}
+
+div.pp_default .pp_loaderIcon {
+    background: transparent asset_url("prettyPhoto/default/loader.gif") no-repeat scroll center center;
+}
+
+div.pp_default .pp_expand {
+    background: transparent asset_url("prettyPhoto/default/sprite.png") no-repeat scroll 0px -29px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+a.pp_next {
+    background: transparent asset_url("prettyPhoto/light_rounded/btnNext.png") no-repeat scroll 10000px 10000px;
+    display: block;
+    float: right;
+    height: 100%;
+    text-indent: -10000px;
+    width: 49%;
+}
+
+a.pp_previous {
+    background: transparent asset_url("prettyPhoto/light_rounded/btnNext.png") no-repeat scroll 10000px 10000px;
+    display: block;
+    float: left;
+    height: 100%;
+    text-indent: -10000px;
+    width: 49%;
+}
+
+div.pp_default .pp_close {
+    width: 30px;
+    height: 30px;
+    background: transparent asset_url("prettyPhoto/default/sprite.png") no-repeat scroll 2px 1px;
+    cursor: pointer;
+}
+
+div.pp_default .pp_bottom .pp_left {
+    background: transparent asset_url("prettyPhoto/default/sprite.png") no-repeat scroll -78px -127px;
+}
+
+div.pp_default .pp_bottom .pp_middle {
+    background: transparent asset_url("prettyPhoto/default/sprite_x.png") repeat-x scroll left bottom;
+}
+
+div.pp_default .pp_bottom .pp_right {
+    background: transparent asset_url("prettyPhoto/default/sprite.png") no-repeat scroll -112px -127px;
+}
+
+div.pp_default .pp_description {
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: $logo-font;
+}
+
+.no-pad {
+  padding: 0 !important;
+}
+
+.footer {
+  height: 250px;
+  background-color: rgb(67, 117, 122);
+}
+
+.footer-box {
+  text-align: center;
+  margin-top: 100px;
+  color: wheat;
+}
+
+.content-row {
+  max-width: 100%;
+  padding: 50px 200px;
+  background-color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.band-member-right {
+  text-align: right;
+}
+
+.member-name {
+  letter-spacing: 1px;
+  font-family: $header-font;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.member-role {
+  font-size: 20px;
+  color: grey;
+}
+
+.member-image img {
+  border-radius: 500px;
+  height: 325px;
+}

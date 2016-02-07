@@ -65,10 +65,19 @@ GEM
       html2haml
     erubis (2.7.0)
     execjs (2.6.0)
+    foundation-rails (6.1.1.2)
+      railties (>= 3.1.0)
+      sass (>= 3.3.0, < 3.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
       tilt
+    haml-rails (0.9.0)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 4.0.6, < 5.0)
+      html2haml (>= 1.0.1)
+      railties (>= 4.0.1)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
@@ -170,6 +179,8 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   erb2haml
+  foundation-rails
+  haml-rails
   jbuilder (~> 2.0)
   jquery-rails
   mongoid!

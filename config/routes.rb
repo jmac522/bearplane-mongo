@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+  root 'homes#index'
+  resources :homes, only: [:index]
   resources :shows
+  get '/media' => 'homes#media'
+  get '/links' => 'homes#links'
+  get '/about' => 'homes#about'
+  get '/contact' => 'homes#contact'
+  get '/calendar' => 'homes#calendar'
+  get '/store' => 'homes#store'
+  get '/shows/falconpunch' => 'shows#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
