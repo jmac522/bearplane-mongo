@@ -1,0 +1,35 @@
+= form_for(@show) do |f|
+  - if @show.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@show.errors.count, "error")
+        prohibited this show from being saved:
+      %ul
+        - @show.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label :venue
+    %br/
+    = f.text_field :venue
+  .field
+    = f.label :date
+    %br/
+    = f.text_field :date
+  .field
+    = f.label :door_time
+    %br/
+    = f.text_field :door_time
+  .field
+    = f.label :set_time
+    %br/
+    = f.text_field :set_time
+  .field
+    = f.label :title
+    %br/
+    = f.text_field :title
+  .field
+    = f.label :cost
+    %br/
+    = f.text_field :cost
+  .actions
+    = f.submit
