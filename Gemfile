@@ -43,3 +43,5 @@ group :development do
   gem 'spring'
 end
 
+gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
+gem "erb2haml", :group => :development
