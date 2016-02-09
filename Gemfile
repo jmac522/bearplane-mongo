@@ -47,3 +47,4 @@ gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 gem "erb2haml", :group => :development
 gem "haml-rails"
 gem 'foundation-rails'
+gem 'jquery-turbolinks'

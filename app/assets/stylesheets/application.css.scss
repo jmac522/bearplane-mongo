@@ -16,7 +16,7 @@
 
  */
  @import url(https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Poiret+One|Crimson+Text);
- @import url(https://fonts.googleapis.com/css?family=Lato:700|Droid+Serif);
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
  $background: #A1C4C7;
  $accent: rgb(67, 117, 122);
  $logo-font: 'Poiret One', cursive;
@@ -126,10 +126,15 @@
    text-align: center;
 
    h2 {
-     font-family: $logo-font;
-     background-color: rgba(52, 52, 52, 0.1);
+     font-family: $header-font;
+     font-weight: 300;
      padding: 60px;
+     font-size: 1.5rem;
    }
+ }
+
+ .youtube-vid {
+   margin-top: 65px;
  }
 
  .header {
@@ -138,9 +143,12 @@
      height: 250px;
    }
    h3 {
-     font-family: $logo-font;
+     font-family: $header-font;
+     font-weight: 300;
+     letter-spacing: 3px;
      a {
        color: black;
+       padding-left: 30px;
      }
    }
  }
@@ -279,7 +287,7 @@ div.pp_default .pp_description {
 }
 
 .member-name {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-family: $header-font;
   font-size: 25px;
   margin-top: 40px;

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require jquery.turbolinks
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
@@ -21,9 +22,9 @@ $(document).ready(function() {
   $(".store").prettyPhoto({
     social_tools: false
   });
-  if (location.pathname == "/") {
-
-  } else {
-    $('.link a[href^="/' + location.pathname.split("/")[1] + '"]').parent('div').addClass('active');
-  }
+  $("[href]").each(function() {
+  if (this.href == window.location.href) {
+      $(this).parent('div').addClass("active");
+      }
+  });
 });
