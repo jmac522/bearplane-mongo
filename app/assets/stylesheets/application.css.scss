@@ -137,6 +137,68 @@
    margin-top: 65px;
  }
 
+ .sal-button {
+   background: $background;
+   border-radius: 30px;
+   border: 1px solid darken($background, 5);
+ }
+
+ .sal-button:hover {
+   background: darken($background, 5);
+ }
+
+ .sal-compliment-neon {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+   text-transform: uppercase;
+   border: 3px solid #707070;
+   border-radius: 3px;
+   font-weight: bolder;
+   background: black;
+   font-size: 50px;
+   color: white;
+   font-family: $header-font;
+ }
+
+ .sal-compliment-emboss {
+  color:rgba(0,0,0,.6);
+  background-color:#dadada;
+  text-shadow:rgba(0,0,0,.2) 2px 6px 5px,rgba(255,255,255,.4) 0 -4px 30px;
+  font-size: 50px;
+  font-family: $header-font;
+  text-transform: uppercase;
+ }
+
+ .sal-compliment-fire {
+  font-size: 100px;
+  font-family: $header-font;
+  background: black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-shadow: 0px 0px 20px #FEFCC9, 10px -10px 30px #FEEC85, -20px -20px 40px #FFAE34, 20px -40px 50px #EC760C, -20px -60px 60px #CD4606, 0px -80px 70px #973716, 10px -90px 80px #451B0E;
+ }
+
+ .sal-compliment-anaglyphic {
+  font-size: 75px;
+  font-weight: bolder;
+  font-family: $header-font;
+  text-transform: uppercase;
+  color: rgba(0, 168, 255, 0.5);
+  text-shadow: 8px 8px 0px rgba(255, 0, 180, 0.5);
+  background: white;
+ }
+
+ .sal-compliment-vintage {
+   font-size: 50px;
+   text-transform: uppercase;
+   border: 3px solid #707070;
+   border-radius: 3px;
+   font-weight: bolder;
+   color: #707070;
+   text-shadow: 1px 1px 0px #eee, 3px 3px 0px #707070;
+   background: #eee;
+ }
+
  .header {
    text-align: center;
    img {
