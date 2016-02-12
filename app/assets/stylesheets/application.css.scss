@@ -16,7 +16,7 @@
 
  */
  @import url(https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Poiret+One|Crimson+Text);
- @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
  $background: #A1C4C7;
  $accent: rgb(67, 117, 122);
  $logo-font: 'Poiret One', cursive;
@@ -176,6 +176,44 @@
   text-transform: uppercase;
   color: #FFF;
   text-shadow: 0px 0px 20px #FEFCC9, 10px -10px 30px #FEEC85, -20px -20px 40px #FFAE34, 20px -40px 50px #EC760C, -20px -60px 60px #CD4606, 0px -80px 70px #973716, 10px -90px 80px #451B0E;
+ }
+
+ .sal-compliment-stitched {
+  outline: 1px dashed #98abb9;
+  outline-offset: -5px;
+  background-color: #556068;
+  -webkit-box-shadow: 2px 2px 2px #000;
+  -moz-box-shadow: 2px 2px 2px #000;
+  box-shadow: 2px 2px 2px #000;
+  font-size: 70px;
+  font-family: $header-font;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+ }
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+ .sal-compliment-lobster {
+  background: #731e1e;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .2) 3px 3px 3px;
+  font-size: 100px;
+  border-radius: 5px;
+ }
+
+ .sal-compliment-rough {
+  background: asset_url("rough_blue.jpg") no-repeat center center;
+ 	background-size: cover;
+ 	color: #fff;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+  font-family: $header-font;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
  }
 
  .sal-compliment-anaglyphic {

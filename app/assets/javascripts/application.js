@@ -36,9 +36,13 @@ $(function () {
         $(".sal-compliment").removeClass("sal-compliment-vintage");
         $(".sal-compliment").removeClass("sal-compliment-anaglyphic");
         $(".sal-compliment").removeClass("sal-compliment-fire");
-        $(".sal-compliment").removeClass("sal-compliment-emboss")
+        $(".sal-compliment").removeClass("sal-compliment-emboss");
+        $(".sal-compliment").removeClass("sal-compliment-stitched");
+        $(".sal-compliment").removeClass("sal-compliment-lobster");
+        $(".sal-compliment").removeClass("sal-compliment-rough");
         var subjects = [ "godking",
       "wizard",
+      "president",
       "soldier",
       "arbiter",
       "demigod",
@@ -183,7 +187,7 @@ $(function () {
       var conclusionPhrase = conclusionPhrases[Math.floor(Math.random()*conclusionPhrases.length)];
 
       var compliment = "You are a " + adjective + " " + subject + " " + conclusionPhrase + ".";
-      var textClasses = ["sal-compliment-vintage", "sal-compliment-neon", "sal-compliment-anaglyphic", "sal-compliment-fire", "sal-compliment-emboss"];
+      var textClasses = ["sal-compliment-vintage", "sal-compliment-neon", "sal-compliment-anaglyphic", "sal-compliment-fire", "sal-compliment-emboss","sal-compliment-stitched","sal-compliment-lobster","sal-compliment-rough"];
       var textClass = textClasses[Math.floor(Math.random()*textClasses.length)];
       $(".sal-compliment").addClass(textClass);
       $(".sal-compliment").text(compliment);
