@@ -179,7 +179,8 @@ $(function () {
       "proveyor of the finest cheeses",
       "who is classier than a Duke or a Count or something",
       "holder of the world record of the thing where you put clothespins on your face. Have you seen people do that? It's weird.",
-      "Connasoir, adored by all"
+      "Connasoir, adored by all",
+      
     ];
 
       var adjective = adjectives[Math.floor(Math.random()*adjectives.length)];
