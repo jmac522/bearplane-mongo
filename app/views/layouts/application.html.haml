@@ -5,7 +5,7 @@
 
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %title= content_for?(:title) ? yield(:title) : "Untitled"
+    %title= "Bearplane"
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "application", "data-turbolinks-track" => true
@@ -38,7 +38,7 @@
                   =link_to shows_path do
                     %span calender
                 .link.small-4.columns
-                  %a.store{rel:"prettyPhoto", href:"http://www.cafepress.com/bearplane?iframe=true&width=95%&height=100%", title:"Bearplane Store" }
+                  %a.store{ href:"http://www.cafepress.com/bearplane?iframe=true&width=95%&height=100%", title:"Bearplane Store" }
                     %span store
                 .link.small-4.columns
                   =link_to links_path do
