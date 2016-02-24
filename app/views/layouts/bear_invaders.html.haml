@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title Bear Defenders
+    %meta{ :charset => "utf-8" }
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+    %link{rel:"shortcut icon", href: asset_url("favicon.ico")}
+    = stylesheet_link_tag "starfield"
+    = csrf_meta_tag
+
+
+  %body
+    #star-field
+    #gamecontainer
+      %canvas#gameCanvas
+    / this is where the Space Invaders HTML will go... */
+
+    :javascript
+      /* And this is where we'll put our JS. */
+
+
+    = javascript_include_tag "starfield"
+    = javascript_include_tag "bear_invaders"

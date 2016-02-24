@@ -16,6 +16,7 @@
 //= require owl.carousel
 //= require 'jquery.jplayer'
 //= require player
+//= require starfield
 //= require turbolinks
 //= require jquery.turbolinks
 //= require_tree .

@@ -1,4 +1,6 @@
 class HomesController < ApplicationController
+  layout "bear_invaders", :only => [ :invaders ]
+
   def index
   end
 
@@ -14,5 +16,8 @@ class HomesController < ApplicationController
 
   def calendar
     @shows = Show.all
+  end
+
+  def invaders
   end
 end

@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   get '/contact' => 'homes#contact'
   get '/calendar' => 'homes#calendar'
   get '/store' => 'homes#store'
+  get '/invaders' => 'homes#invaders'
   get '/shows/falconpunch' => 'shows#new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
