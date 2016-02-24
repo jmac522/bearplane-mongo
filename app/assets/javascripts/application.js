@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require owl.carousel
+//= require 'jquery.jplayer'
+//= require player
 //= require turbolinks
 //= require jquery.turbolinks
 //= require_tree .
@@ -27,6 +30,16 @@ $(document).ready(function() {
       $(this).parent('div').addClass("active");
       }
   });
+});
+
+$(document).ready(function() {
+  $("#owl-media").owlCarousel({
+    items : 4,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+  });
+  $("#owl-media a").prettyPhoto();
+
 });
 
 $(function () {
@@ -77,7 +90,9 @@ $(function () {
       "scientist",
       "ace",
       "paladin",
-      "knight"
+      "knight",
+      "celestial body",
+      "employee of the month"
       ];
 
       var adjectives = [
@@ -136,7 +151,10 @@ $(function () {
       "scintillating",
       "sparkling",
       "clinquant",
-      "gilded" ];
+      "gilded",
+      "pensive",
+      "luminous orb",
+      "wizard saint" ];
 
       var conclusionPhrases = [
       "of the cosmic tribunal",
@@ -180,7 +198,68 @@ $(function () {
       "who is classier than a Duke or a Count or something",
       "holder of the world record of the thing where you put clothespins on your face. Have you seen people do that? It's weird.",
       "Connasoir, adored by all",
-      
+      "scroller of scrolls",
+      "benevolent ruler of the cosmos",
+      "eater of peaches",
+      "king of the lions",
+      "peacfully residing in the domain of the sea",
+      "uniting the nine kingdoms",
+      "holder of the one true ring, AND the backup",
+      "holding balance in the cosmos",
+      "acceptor of gift certificates",
+      "soaring like eagle over the mighty precipice",
+      "owner of many leather bound books which fill your abode with the smell of rich mahogany",
+      "methodically piecing together the very fabric and essence of...uh...I dunno",
+      "obsever of the universe and eater of seven jalepenos",
+      "the invetor of mozerella sticks",
+      "protecting Sparta from the Persians",
+      "taikin' it easy",
+      "encroaching within the realm of the unknown",
+      "straight up killin' it",
+      "shepard of the stars",
+      "destoryer of Myspace",
+      "principle investor in Instagram",
+      "shaver of small dogs",
+      "weaving the quilt of reality",
+      "... Cacaw Cacaw",
+      "secret member of Harry Potter's crew",
+      "also T-Pain's cousin",
+      "who is pretty much exactly like Bruce Willis in Die Hard",
+      "the inspiration for all great movies",
+      "captain at the helm of destiny",
+      "taker of the both the red and blue pill",
+      "fringe upon godlyness and madness",
+      "formerly of destiny's child",
+      ", spice 7: the forgotten tapes",
+      "leader of the army of kings",
+      "who beats Rocky in Rocky 7",
+      "fighting the good fight for the right reasons",
+      "who has 5 stars on Yelp",
+      "regional sales champ",
+      "solver of all the Scooby Doo mysteries",
+      "slipping the surly bonds of Earth",
+      "grower of Mars potatoes",
+      "returning from an imporant exploratory space mission",
+      "embodying Matt Damon's astral self",
+      "played by Don Cheadle",
+      "who knows pulled pork man, that's good stuff",
+      "who is always grammatically correct, sometimes",
+      "only practicing space harpsichord on the dark side of the moon",
+      "trainer of planetary dogs",
+      "master pidgeon whisperer",
+      "standing strong in opposition to the Shogun",
+      ", three time Olympic luger",
+      "the last Samurai",
+      "son of Jove, inheriter of the Heavens",
+      "champion of the intergalactic federation",
+      "ruler of planet Arrakis",
+      "master director of the galactic choir",
+      "the elder wiseman amongst shaolin monks",
+      "who can pull more weight than Superman",
+      "quick as a jackrabbit, probably",
+      "defending Earth from the evil alien ruler Brewduhl",
+      "hungry for tacos",
+      "most likely to succeed at great things"
     ];
 
       var adjective = adjectives[Math.floor(Math.random()*adjectives.length)];

@@ -1,2 +1,52 @@
 .content-row
-  %h1 FUCKING YEA THIS IS MEDIA DONE RIGHT
+  %h1.header.text-center PICTURES
+  .small-12.columns
+    #owl-media
+      .item
+        .media-page-img-container
+          %a{href: asset_url("media_page/bass_face.jpg"), rel:"prettyPhoto[bearGal]", title: "Bass Face" }
+            = image_tag("media_page/bass_face.jpg", class: "thumbnail", alt: "Bears in the Woods")
+      .item
+        .media-page-img-container
+          %a{href: asset_url("media_page/bear_arms.jpg"), rel:"prettyPhoto[bearGal]", title: "Bear Arms" }
+            = image_tag("media_page/bear_arms.jpg", class: "thumbnail", alt: "Bears on the Street")
+      .item
+        .media-page-img-container
+          %a{href: asset_url("media_page/bear_force.jpg"), rel:"prettyPhoto[bearGal]", title: "Bear Force" }
+            = image_tag("media_page/bear_force.jpg", class: "thumbnail", alt: "Bears in the Woods")
+      .item
+        .media-page-img-container
+          %a{href: asset_url("media_page/brian_shred.jpg"), rel:"prettyPhoto[bearGal]", title: "Brian Shred" }
+            = image_tag("media_page/brian_shred.jpg", class: "thumbnail", alt: "Bears in the Woods")
+      .item
+        .media-page-img-container
+          %a{href: asset_url("media_page/chalk_bear.jpg"), rel:"prettyPhoto[bearGal]", title: "Chalk Bear" }
+            = image_tag("media_page/chalk_bear.jpg", class: "thumbnail", alt: "The Streets pay tribute to the Bears")
+  %h1.text-center AUDIO
+  #jquery_jplayer_1.jp-jplayer
+  #jp_container_1.jp-audio{"aria-label" => "media player", :role => "application"}
+    .jp-type-single
+      .jp-gui.jp-interface
+        .jp-volume-controls
+          %button.jp-mute{:role => "button", :tabindex => "0"} mute
+          %button.jp-volume-max{:role => "button", :tabindex => "0"} max volume
+          .jp-volume-bar
+            .jp-volume-bar-value
+        .jp-controls-holder
+          .jp-controls
+            %button.jp-play{:role => "button", :tabindex => "0"} play
+            %button.jp-stop{:role => "button", :tabindex => "0"} stop
+          .jp-progress
+            .jp-seek-bar
+              .jp-play-bar
+          .jp-current-time{"aria-label" => "time", :role => "timer"}  
+          .jp-duration{"aria-label" => "duration", :role => "timer"}  
+          .jp-toggles
+            %button.jp-repeat{:role => "button", :tabindex => "0"} repeat
+      .jp-details
+        .jp-title{"aria-label" => "title"}  
+      .jp-no-solution
+        %span Update Required
+        To play the media you will need to either update your browser to a recent version or update your
+        = succeed "." do
+          %a{:href => "http://get.adobe.com/flashplayer/", :target => "_blank"} Flash plugin

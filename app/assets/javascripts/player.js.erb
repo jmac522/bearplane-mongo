@@ -1,0 +1,19 @@
+$(document).ready ( function() {
+  $("#jquery_jplayer_1").jPlayer({
+    ready: function () {
+      $(this).jPlayer("setMedia", {
+        title: "Funk to the Man",
+        m4a: "<%= asset_path('fttm.m4a') %>"
+      });
+    },
+    cssSelectorAncestor: "#jp_container_1",
+    swfPath: "/js",
+    supplied: "m4a, oga",
+    useStateClassSkin: true,
+    autoBlur: false,
+    smoothPlayBar: true,
+    keyEnabled: true,
+    remainingDuration: true,
+    toggleDuration: true
+  });
+});

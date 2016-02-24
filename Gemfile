@@ -48,3 +48,5 @@ gem "erb2haml", :group => :development
 gem "haml-rails"
 gem 'foundation-rails'
 gem 'jquery-turbolinks'
+gem 'owlcarousel-rails'
+gem 'jplayer-rails'
