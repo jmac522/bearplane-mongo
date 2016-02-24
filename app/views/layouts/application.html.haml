@@ -15,7 +15,10 @@
     .row
       .header.small-12.columns
         .row
-          .header-img.small-12.columns= image_tag("bearplane.jpg")
+          .header-img.small-12.columns
+            .bear-image
+              = image_tag "bearplane.jpg"
+              = link_to " ", invaders_path, class: "easter-egg"
           .nav.small-12.columns
           .row
             .left-nav.small-4.columns
