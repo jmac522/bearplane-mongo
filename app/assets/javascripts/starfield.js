@@ -96,5 +96,7 @@ function Star(x, y, size, velocity) {
 
 var container = document.getElementById('star-field');
 var starfield = new Starfield();
-starfield.initialise(container);
-starfield.start();
+if (container !== null) {
+	starfield.initialise(container);
+	starfield.start();
+}
